@@ -1,0 +1,102 @@
+body {
+    font-family: 'Rokkitt', serif;
+    background: url("../images/dark_embroidery.png");
+    color: wheat;
+    height: auto;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: auto;
+    max-width: 960px;
+    margin: 0 auto;
+    clear: both;
+}
+
+h1,
+h2 {
+    font-size: 3em;
+    font-weight: 300%;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+.directions {
+    background-color: lightgoldenrodyellow;
+    color: indianred;
+    padding: 1em;
+    border-radius: 10px;
+    border: 3px solid indianred;
+}
+
+p {
+    padding: 2px;
+}
+
+.displayRandom,
+.record,
+#userScore {
+    padding: 1em;
+    margin: 10px 0 10px 0;
+    width: 40%;
+    min-width: 100px;
+    height: 175px;
+    border-radius: 10px;
+    float: left;
+    font-size: 1.25em;
+    color: black;
+    background-color: rgb(128, 255, 128);
+    border: 3px solid white;
+}
+
+.record {
+    margin-left: 15px;
+    background-color: rgb(102, 204, 255);
+}
+
+#userScore {
+    background-color: rgb(255, 179, 179);
+}
+
+.crystalGroup {
+    opacity: 0.65;
+    /* For IE8 and earlier */
+    filter: alpha(opacity=65);
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -ms-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+}
+
+.crystalGroup:hover {
+    opacity: 1;
+    /* For IE8 and earlier */
+    filter: alpha(opacity=100);
+    -webkit-transform: translate(0px, -10px);
+    -moz-transform: translate(0px, -10px);
+    -ms-transform: translate(0px, -10px);
+    -o-transform: translate(0px, -10px);
+    transform: translate(0px, -7px);
+}
+
+img {
+    height: 100px;
+    width: 100px;
+}
+
+#crystal01,
+#crystal02,
+#crystal03,
+#crystal04 {
+    margin: 0.25em;
+    border-radius: 10px;
+    border: 3px solid white;
+}

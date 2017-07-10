@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Crystals Collector!</title>
+    <!-- External CSS style -->
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Rokkitt" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <!-- External Javascript -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>CRYSTAL COLLECTORS!</h1>
+    </div>
+    <div class="container directions">
+        <h2>Instructions</h2>
+        <br>
+        <p>You will be given a random number at the start of the game.</p>
+        <br>
+        <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+        <br>
+        <p>You win the game by matching your total score to the random number, you lose the game if your total score goes above the random number.</p>
+        <br>
+        <p>The value of each crystal is hidden from you until you click on it and use a bit of arithmetic!</p>
+        <br>
+        <p>Each time when the game starts, the game will change the values of each crystal.</p>
+        <br>
+    </div>
+    <div class="container">
+        <div class="displayRandom">Random number: <span id="dispRand"></span></div>
+        <div class="record">
+            <p id="message"></p>
+            <p>Wins: <span id="winTotal"></span></p>
+            <br>
+            <p>Losses: <span id="lossTotal"></span></p>
+            <br>
+            <p id="gamemessage"></p>
+        </div>
+    </div>
+    <div class="container">
+        <img class="crystalGroup" id="crystal01" src="assets/images/diamond.png" alt="diamond">
+        <img class="crystalGroup" id="crystal02" src="assets/images/emerald.png" alt="emerald">
+        <img class="crystalGroup" id="crystal03" src="assets/images/lapis.png" alt="lapis">
+        <img class="crystalGroup" id="crystal04" src="assets/images/redstone.png" alt="redstone">
+    </div>
+    <div class="container">
+        <div id="userScore">
+            Sum: <span id="sum"></span>
+        </div>
+    </div>
+</body>
+
+</html>
