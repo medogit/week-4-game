@@ -22,10 +22,10 @@ var game = {
     },
     // Assigns values to each crystal button
     assignValues: function() {
-        $("#crystal01").attr("value", this.crystalValues[0]);
-        $("#crystal02").attr("value", this.crystalValues[1]);
-        $("#crystal03").attr("value", this.crystalValues[2]);
-        $("#crystal04").attr("value", this.crystalValues[3]);
+        $("#crystal1").attr("value", this.crystalValues[0]);
+        $("#crystal2").attr("value", this.crystalValues[1]);
+        $("#crystal3").attr("value", this.crystalValues[2]);
+        $("#crystal4").attr("value", this.crystalValues[3]);
     },
     // Finds factors to find the random sum
     randomFactorValues: function() {
@@ -39,7 +39,7 @@ var game = {
         }
 
     },
-    // Finds the sum based on crystal values and random factors
+    // Arriving at the sum
     defineSum: function() {
 
         this.randomCrystalValues();
@@ -50,14 +50,14 @@ var game = {
             this.randomNum = this.randomNum + (this.crystalValues[i] * this.randomFactors[i]);
         }
     },
-    // Displays values to page
+    // Printing numbers to user
     fillHTML: function() {
         $("#dispRand").html(this.randomNum);
         $("#winTotal").html(this.wins);
         $("#lossTotal").html(this.losses);
         $("#sum").html(this.userSum);
     },
-    // Reset values
+    // Restart
     resetGame: function() {
         this.randomNum = 0;
         this.userSum = 0;
